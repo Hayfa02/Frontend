@@ -7,8 +7,8 @@ pipeline {
           stage('Docker Build') {
               steps {
            
-               
-               sh 'docker build -t contangular .'
+               sh'sudo -i'
+               sh ' docker build -t contangular .'
       }
     }
        
