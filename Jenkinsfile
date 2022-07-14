@@ -7,7 +7,7 @@ pipeline {
           stage('Docker Build') {
               steps {
            
-               sh'sudo -i /var/run/docker.sock'
+               sh'sudo -S /var/run/docker.sock'
                sh ' docker build -t contangular .'
       }
     }
