@@ -9,6 +9,14 @@ pipeline {
                sh ' docker build -t contangular .'
       }
     }
+        
+        
+                stage(' image  container') {
+             steps {
+               sh 'docker images'
+
+      }
+    }
        
              
           
