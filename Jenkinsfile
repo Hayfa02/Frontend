@@ -11,15 +11,22 @@ pipeline {
       }
     }
 
-           stage('Docker contt') {
-
+       
+             
+          
+          stage(' image  container') {
              steps {
-               sh 'run docker contangular'
-               
+               sh 'docker images'
 
       }
     }
-             
+          
+                    stage(' run  docker') {
+             steps {
+               sh ' docker run contangular'
+
+      }
+    }
           
     
       }
