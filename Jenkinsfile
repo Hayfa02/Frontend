@@ -11,7 +11,7 @@ pipeline {
       }
     }
 
-           stage('Docker Build') {
+           stage('Docker contt') {
 
              steps {
                sh 'run docker contangular'
