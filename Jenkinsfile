@@ -14,10 +14,18 @@ pipeline {
                 stage(' image  container') {
              steps {
                sh 'docker images'
+               
 
       }
     }
        
+                        stage(' run  image') {
+             steps {
+               sh 'run docker contangular'
+               
+
+      }
+    }
              
           
     
