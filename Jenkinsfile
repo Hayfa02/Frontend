@@ -19,9 +19,9 @@ pipeline {
       }
     }
   
-                 stage(' docker  run') {
+                 stage(' docker  cont') {
              steps {
-               sh 'docker run -p 4000:4000 -t contangular'
+               sh 'docker ps'
 
       }
     }
