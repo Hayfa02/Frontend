@@ -20,13 +20,7 @@ pipeline {
 
       }
     }
-          
-                    stage(' run  docker') {
-             steps {
-               sh ' docker run contangular'
-
-      }
-    }
+  
           
     
       }
