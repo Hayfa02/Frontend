@@ -21,7 +21,7 @@ pipeline {
   
                  stage(' docker  run') {
              steps {
-               sh 'docker run --rm contangular'
+               sh 'docker run -p 4000:4000 -t contangular'
 
       }
     }
