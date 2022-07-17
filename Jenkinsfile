@@ -10,17 +10,21 @@ pipeline {
 
       }
     }
-
-       
              
           
-          stage(' image  container') {
+          stage(' docker  image') {
              steps {
                sh 'docker images'
 
       }
     }
   
+                 stage(' docker  run') {
+             steps {
+               sh 'docker run --rm contangular'
+
+      }
+    }
           
     
       }
